@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pelasta Koirat - Yhteydenotto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Koti</a>
+    <a href="kauppa.html">Koirat</a>
+    <a href="lahjoita.html">Lahjoita</a>
+    <a href="yhteydenotto.html">Yhteydenotto</a>
+  </nav>
+  <div class="yhteydenotto-container">
+    <h2>Ota meihin yhteyttä</h2>
+    <form id="contactForm">
+      <label for="name">Nimi (Valinnainen)</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Arvio:</label>
+      <input type="text" id="text" name="text" required>
+
+      <label for="message">Viesti:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit" id="sendMessage">Lähetä</button>
+    </form>
+  </div>
+
+  <div id="messageSentPopup" class="popup2"> 
+    <p>Sinun viestisi on lähetetty!</p>
+    <button id="closePopup2">Sulje</button> </div> 
+
+  <script src="script.js"></script> 
+</body>
+</html>
